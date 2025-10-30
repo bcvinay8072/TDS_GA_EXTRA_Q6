@@ -4,24 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>404 - Page Not Found</title>
+    <!-- Load Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         body { font-family: 'Inter', sans-serif; }
     </style>
 </head>
 <body class="bg-gray-900 text-white min-h-screen flex items-center justify-center text-center">
-    <div class="p-12 bg-gray-800 rounded-xl shadow-2xl">
+    <div class="p-12 bg-gray-800 rounded-xl shadow-2xl max-w-lg mx-4">
+        <!-- Creative 404 elements -->
         <h1 class="text-9xl font-bold text-indigo-500 mb-4">404</h1>
         <h2 class="text-3xl font-semibold mb-4">Oops! You're lost in space.</h2>
         <p class="text-lg text-gray-300 mb-8">
             The page you're looking for seems to have drifted beyond our sensors.
         </p>
         
+        <!-- Navigation back to home page -->
         <a href="/" 
            class="inline-block bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-3 px-6 rounded-lg transition duration-300">
            ← Go Back to Home Base
         </a>
         
+        <!-- 
+          FIXED: The email is now in a plain <p> tag 
+          without the <!--email_off comments.
+        -->
         <p class="text-gray-500 mt-10 text-sm">
             If you believe this is an error, please contact mission control:
             <br>
@@ -30,3 +37,4 @@
     </div>
 </body>
 </html>
+
