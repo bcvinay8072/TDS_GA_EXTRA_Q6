@@ -2,26 +2,34 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale-1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My GitHub Pages Site</title>
+    <!-- Load Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
+        /* Using a common, clean font */
         body { font-family: 'Inter', sans-serif; }
     </style>
 </head>
 <body class="bg-gray-900 text-white min-h-screen flex items-center justify-center">
-    <div class="text-center p-12 bg-gray-800 rounded-xl shadow-2xl">
+    <div class="text-center p-12 bg-gray-800 rounded-xl shadow-2xl max-w-lg mx-4">
         <h1 class="text-4xl font-bold mb-4">Welcome to My Site</h1>
         <p class="text-lg text-gray-300 mb-8">This is the main page for my GitHub Pages project.</p>
         
-        <a href="/nonexistent-page" 
+        <!-- Link to test the 404 page -->
+        <a href="/nonexistent-page-test-url" 
            class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg transition duration-300">
            Test 404 Page
         </a>
         
+        <!-- 
+          FIXED: The email is now in a plain <p> tag 
+          without the <!--email_off comments.
+        -->
         <p class="text-gray-500 mt-10 text-sm">
             Contact: 23f2003186@ds.study.iitm.ac.in
         </p>
     </div>
 </body>
 </html>
+
